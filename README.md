@@ -1,9 +1,16 @@
-zend-twitter-bootstrap
-======================
+# Zend Twitter Bootstrap
 
-Twitter Bootstrap extensions for the Zend Framework
+Twitter Bootstrap extensions for the Zend Framework 1.
 
-Credits
--------
+## Implementations
 
-*   Initial ideas and some implentation for `Twitter_Form` taken from [Komola's Bootstrap-Zend-Framework](https://github.com/komola/Bootstrap-Zend-Framework)
+* Twitter_Form
+* Twitter_View_Helper_Breadcrumb
+
+## Requirements
+
+* Zend Framework 1.8+
+
+## Credits
+
+* Initial ideas and some implentation for `Twitter_Form` taken from [Komola's Bootstrap-Zend-Framework](https://github.com/komola/Bootstrap-Zend-Framework)
