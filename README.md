@@ -13,6 +13,7 @@ Twitter Bootstrap extensions for the Zend Framework 1.
 ## Requirements
 
 * Zend Framework 1.8+
+* [Twitter Bootstrap](http://getbootstrap.com) 3+
 
 ## Credits
 
