@@ -6,6 +6,7 @@
  * @category Twitter
  * @package Twitter_View
  * @subpackage Helper_Alert
+ * @copyright Gareth Flowers
  */
 class Twitter_View_Helper_Alert extends Zend_View_Helper_Abstract {
 
@@ -24,10 +25,15 @@ class Twitter_View_Helper_Alert extends Zend_View_Helper_Abstract {
      * @return string
      */
     public function render() {
-        $html = '<div class="alert' . (strlen($this->_type) ? ' alert-' . $this->_type : '' ) . '">';
-        $html .= '<button type="button" class="close" data-dismiss="alert">&times;</button>';
-        $html .= $this->_text;
-        $html .= '</div>';
+        $class = 'alert alert-dismissable';
+        if (!empty($this->_type)) {
+            $class .= ' alert-' . $this->_type;
+        }
+
+        $html = '<div class="' . $class . '">'
+                . '<button type="button" class="close" data-dismiss="alert">&times;</button>'
+                . $this->_text
+                . '</div>';
 
         return $html;
     }
